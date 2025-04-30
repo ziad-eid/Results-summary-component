@@ -162,12 +162,11 @@ main .summary button {
     border-radius: 30px;
     margin-top: 15px;
     cursor: pointer;
-    transition: .3s;
     font-weight: 600;
 }
 
 main .summary button:hover {
-    background-color: hsla(224, 30%, 27%, 0.918);
+     background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
 }
 
 @media (max-width: 991px) {
