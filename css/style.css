@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(221, 100%, 96%);
+    font-family: "Hanken Grotesk";
+}
+
+main {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px hsl(241, 100%, 89%);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+main .result {
+    background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    width: 310px;
+    height: 432px;
+    z-index: 2;
+}
+
+main .result h3 {
+    color: #ffffffbb;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+main .result .num {
+    width: 170px;
+    height: 170px;
+    background-image: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .result .num h1 {
+    font-size: 55px;
+    color: #fff;
+}
+
+main .result .num span {
+    color: #ffffff70;
+    font-size: 16px;
+}
+
+main .result .text {
+    margin: 0;
+}
+
+main .result .text h2 {
+    color: #fff;
+    margin-top: 25px;
+}
+
+main .result .text p {
+    color: #ffffffbb;
+    font-size: 15px;
+    max-width: 220px;
+    margin: 15px auto 0;
+    line-height: 1.4;
+}
+
+main .summary {
+    background-color: #fff;
+    padding: 30px;
+    width: 340px;
+    z-index: 1;
+    transform: translateX(-10px);
+    margin-left: 20px;
+}
+
+main .summary h3 {
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+main .summary .list .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+main .summary .list .box:nth-child(1) {
+    background-color: hsla(0, 100%, 67%, 0.096);
+}
+
+main .summary .list .box:nth-child(2) {
+    background-color: hsla(39, 100%, 56%, 0.116);
+}
+
+main .summary .list .box:nth-child(3) {
+    background-color: hsla(166, 100%, 37%, 0.103);
+}
+
+main .summary .list .box:nth-child(4) {
+    background-color: hsla(234, 85%, 45%, 0.089);
+}
+
+main .summary .list .box div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+main .summary .list .box:nth-child(1) div:nth-child(1) {
+    color: hsl(0, 100%, 67%);
+}
+
+main .summary .list .box:nth-child(2) div:nth-child(1) {
+    color: hsl(39, 100%, 56%);
+}
+
+main .summary .list .box:nth-child(3) div:nth-child(1) {
+    color: hsl(166, 100%, 37%);
+}
+
+main .summary .list .box:nth-child(4) div:nth-child(1) {
+    color: hsl(234, 85%, 45%);
+}
+
+main .summary .list .box div:nth-child(1) img {
+    margin-right: 10px;
+}
+
+main .summary .list .box div:nth-child(2) {
+    color: #63636380;
+    font-weight: 600;
+}
+
+main .summary .list .box div:nth-child(2) span {
+    color: hsl(224, 30%, 27%);
+}
+
+main .summary button {
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 600;
+}
+
+main .summary button:hover {
+    background-color: hsla(224, 30%, 27%, 0.918);
+}
+
+@media (max-width: 991px) {
+    body {
+        align-items: start;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    main .result {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+
+    main .summary {
+        width: 100%;
+    }
+}
